@@ -30,7 +30,19 @@ class TeacherProfilePresenter {
     }
 
     public void getData(){
-         getFirestoreStudents();
+         getMockStudents();
+    }
+
+    public void getMockStudents(){
+        ArrayList<Student> students = new ArrayList<>();
+        for(int i = 0; i < 20; i++){
+            Student student = new Student();
+            student.setColor(android.R.color.white);
+            student.setName("Student " + String.valueOf(i));
+            student.setTally(12);
+            students.add(student);
+        }
+        view.setData(students);
     }
 
     public void getFirestoreStudents(){

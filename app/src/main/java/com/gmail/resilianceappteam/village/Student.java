@@ -12,7 +12,6 @@ class Student {
 
     public Student(String name, int color, int tally){
         this.name = name;
-
         this.color = color;
         this.tally = tally;
     }

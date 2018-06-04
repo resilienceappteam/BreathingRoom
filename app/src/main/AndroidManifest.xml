@@ -12,14 +12,15 @@
         <activity android:name=".TeacherProfileActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".StudentActivity"
-            android:parentActivityName=".TeacherProfileActivity">
-
-        </activity>
+        <activity
+            android:name=".StudentActivity"
+            android:parentActivityName=".TeacherProfileActivity"></activity>
+        <activity
+            android:name=".BaseActivity"
+            android:label="@string/title_activity_main"></activity>
     </application>
 
 </manifest>

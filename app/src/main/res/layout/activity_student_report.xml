@@ -15,6 +15,7 @@
             android:orientation="vertical">
 
         <TextView
+            android:id="@+id/student_name_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Student Name "
@@ -22,6 +23,7 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
 
         <TextView
+            android:id="@+id/time_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Time of Incident"
@@ -29,11 +31,13 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
 
         <TimePicker
+            android:id="@+id/time_picker"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:timePickerMode="spinner"/>
 
         <TextView
+            android:id="@+id/behavior_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Behavior of Concern"
@@ -41,12 +45,14 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
 
         <EditText
+            android:id="@+id/behavior_et"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Description of Behavior"
-            android:inputType="textMultiLine"/>
+            android:inputType="textLongMessage"/>
 
         <TextView
+            android:id="@+id/interventions_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Interventions"
@@ -54,11 +60,13 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
 
         <EditText
+            android:id="@+id/intervention_et"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Suggested Interventions"/>
 
         <TextView
+            android:id="@+id/expectation_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Expectation"
@@ -66,22 +74,26 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
 
         <EditText
+            android:id="@+id/expectation_et"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Expected Behavior"/>
 
         <TextView
+            android:id="@+id/explanation_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="What Happened?"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
 
         <EditText
+            android:id="@+id/explanation_et"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Explanation of Incident"/>
 
         <TextView
+            android:id="@+id/location_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
@@ -89,11 +101,13 @@
             android:text="Location of Incident"/>
 
         <EditText
+            android:id="@+id/location_et"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Location"/>
 
         <Button
+            android:id="@+id/submit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Submit"
